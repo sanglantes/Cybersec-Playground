@@ -5,64 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    
+
     <!-- Linking -->
     <link rel="stylesheet" href="/external/style.css">
     <script src="/external/script.js"></script>
 
 </head>
 <body>
-    <?php
-        define("PI", "3.141592");
-        $a = 10;
-        $b = 20;
-        
-        $arr_1 = array("string", 15);
-        $arr_2 = array(
-            "foo" => "bar",
-            "foo2" => "bar2"
-        );
+<div class="navbar">
+	<nav>
+	  <ul>
+	    <li><a href="/">Index</a></li>
+	    <li><a href="/playground/">Playground</a></li>
+	    <li><a href="/resources/">Resources</a></li>
+	  </ul>
+	</nav>
+</div>
 
-        class User {
-            public $username;
-            private $email;
-            private $passwd;
+<main>
+	<div id="introduction">
+		<h1>Welcome to Cybersec Playground</h1>
+		<h2>Start by navigating to <span class="highlight">Playground</span></h2>
+	</div>
+<div class="container">
+	<div id="lower-introduction">
+		<p>
+			Saepe ipsum ipsum sint dolorem distinctio adipisci repellendus odit. Iste aut culpa qui et quos soluta. Ratione perferendis repellat enim voluptates ut est molestiae. Eum earum inventore natus aliquam dolor excepturi.<br><br>
 
-            public function __construct($username, $email, $passwd)
-            {
-                $this->username = $username;
-                $this->email = $email;
-                $this->passwd = $passwd;
-            }
+			Non officia labore quia. Aliquid ea odit voluptatibus atque aut iure possimus aut. Sed ab iusto voluptatum impedit.
 
-            public function password_check() {
-                if (strlen($this->passwd) < 7) {
-                    echo "WARNING: Password is too short.<br>";
-                }
-                else {
-                    echo "SUCCESS: Password set to $this->passwd.<br>";
-                }
-            }
-            
-            public function print_info() {
-                echo "$this->username<br>$this->email<br>$this->passwd";
-            }
+			Ut autem rerum quia placeat voluptatem repellendus voluptatem. Possimus tempora consequatur repellat impedit impedit ipsam magni blanditiis. Et et occaecati nisi dolores voluptas.<br><br>
 
-        }
+			Rerum sit sequi perferendis sed dolores. Ullam placeat molestiae cupiditate et odit sunt. Cupiditate consequatur ex omnis molestiae. Non quam ea inventore. Et architecto exercitationem et harum.
 
-        $user1 = new User("falconlover", "falconlover@email.com", "1337lover");
-        echo $user1 -> print_info();
-        echo $user1 -> password_check();
+			Voluptatem reiciendis ut nulla natus sequi illo porro. Vel non aut necessitatibus inventore. Consectetur reprehenderit repellat cupiditate rerum exercitationem. Et exercitationem et consequuntur occaecati laudantium. Optio omnis sint explicabo.
+		</p>
+	</div>
+	<img src="assets/img/template.png" alt="Introduction to security vulnerabilities on Cybersec Playground" class="img-right">
+</div>
 
-        $arr = array(
-            "yo" => "bo",
-            "i'm" => "bo you",
-            "itty bitty" => "titty committee"
-        );
-        foreach ($arr as $x => $x_value) {
-            echo "$x has a value of $x_value<br>";
-        }
+</main>
 
-    ?>
+<footer></footer>
+
+<?php
+
+?>
 </body>
 </html>

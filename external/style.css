@@ -1,0 +1,37 @@
+* {
+	font-family: "Times New Roman", serif;
+}
+
+#introduction {
+	text-align: center;
+}
+
+.navbar,ul {
+	font-size: 20px;
+	background-color: #DADADA;
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+}
+
+#lower-introduction {
+	max-width: 45%;
+	word-wrap: break-word;
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.img-right {
+	max-width: 45%;
+	max-height: 550px;
+}
+
