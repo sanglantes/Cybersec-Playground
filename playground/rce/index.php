@@ -15,15 +15,11 @@
 <h1>Image upload service</h1>
 <h2>Upload your favourite images and share them!</h2>
 </div>
-
-<div class="upload-container">
-	<div class="img-preview">
-		<form method="post" action="upload.php" enctype="multipart/form-data">
-			<input type="file" name="fileTitle" id="uploadedFile" required>
-			<input type="submit" value="Upload" name="submit">
-		</form>
-	</div>
-</div>
+	<form enctype="multipart/form-data" action="upload.php" method="POST">
+    <input type="hidden" name="MAX_FILE_SIZE" value="1500000" />
+    Upload your image: <input name="userfile" type="file" />
+    <input type="submit" value="Upload" />
+</form>
 </main>
 
 </body>
